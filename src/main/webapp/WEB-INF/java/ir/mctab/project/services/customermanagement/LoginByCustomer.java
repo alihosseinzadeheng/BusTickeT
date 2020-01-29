@@ -32,6 +32,7 @@ public class LoginByCustomer extends HttpServlet {
                 out.println("You are Logged in as: "+ customersList.get(0).getUsername());
                 AuthenticationService.getInstance().setLoginCustomer(customersList.get(0));
             }
+            out.print("<a href='searchtriplist.jsp'>Search in trips Now</a>");
             out.close();
         }
     }

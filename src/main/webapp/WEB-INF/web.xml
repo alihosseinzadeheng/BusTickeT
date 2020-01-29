@@ -19,7 +19,6 @@
     <servlet-class>ir.mctab.project.services.customermanagement.Register</servlet-class>
   </servlet>
 
-
     <servlet>
       <servlet-name>GetLoginInformation</servlet-name>
       <servlet-class>ir.mctab.project.services.customermanagement.GetLoginInformation</servlet-class>
@@ -27,6 +26,16 @@
   <servlet>
     <servlet-name>Login</servlet-name>
     <servlet-class>ir.mctab.project.services.customermanagement.LoginByCustomer</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>GetSearchInformation</servlet-name>
+    <servlet-class>ir.mctab.project.services.tripmanagement.GetSearchInformation</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>ir.mctab.project.services.tripmanagement.SearchInTrips</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -47,5 +56,14 @@
   <servlet-mapping>
     <servlet-name>Login</servlet-name>
     <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>GetSearchInformation</servlet-name>
+    <url-pattern>/getSearchInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/search</url-pattern>
   </servlet-mapping>
 </web-app>
