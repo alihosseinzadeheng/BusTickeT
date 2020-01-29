@@ -23,17 +23,17 @@ public class Register extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        HttpSession session=request.getSession(false);
+        HttpSession session = request.getSession(false);
         out.println("Welcome babe . . . \n");
-        username=(String)session.getAttribute("uname");
-        password=(String)session.getAttribute("pass");
-        fisrtname=(String)session.getAttribute("fname");
-        lastname=(String)session.getAttribute("lname");
-        gender=(String)session.getAttribute("gen");
-        out.close();
-        Customer customer=new Customer(username,password,fisrtname,lastname,gender);
+        username = (String) session.getAttribute("uname");
+        password = (String) session.getAttribute("pass");
+        fisrtname = (String) session.getAttribute("fname");
+        lastname = (String) session.getAttribute("lname");
+        gender = (String) session.getAttribute("gen");
+        Customer customer = new Customer(username, password, fisrtname, lastname, gender);
         customerRepository.save(customer);
-        System.out.println("in doget method: "+username+password+fisrtname+lastname+gender);
+        out.print("<a href='login.jsp'>Login Now</a>");
+        out.close();
     }
 
 }

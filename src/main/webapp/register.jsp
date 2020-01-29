@@ -10,12 +10,11 @@
 </head>
 <body >
 
-<form action="getInfo">
-
+<form action="getRegInfo">
     <h4>در اینجا اطلاعات کاربری خود را وارد کنید: </h4>
     نام کاربری مدنظر شما (به زبان انگلیسی):<input type="text" name="userName" placeholder="username"/><br/>
     گذرواژه دلخواه شما (به زبان انگلیسی و اعداد):<input type="text" name="passWord" placeholder="password"/><br/>
-    <h4>در اینجا اطلاعات شخصی خود را وارد کنید:  </h4>
+    <h4>در اینجا اطلاعات شخصی خود را وارد کنید: </h4>
     نام:<input type="text" name="firstName" placeholder="first name"/><br/>
     نام خانوادگی:<input type="text" name="lastName" placeholder="last name"/><br/>
     جنسیت:<input type="checkbox" name="Gender" value="Male"/> Male
@@ -23,8 +22,6 @@
 
     <button type="submit" class="button">تایید</button>
 </form>
-
-
 
 </body>
 </html>
