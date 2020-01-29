@@ -4,10 +4,27 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
+  <listener>
+  <listener-class>MyListener</listener-class>
+</listener>
+
+  <servlet>
+    <servlet-name>GetRegistrationInformation</servlet-name>
+    <servlet-class>ir.mctab.project.services.customermanagement.GetRegistrationInformation</servlet-class>
+  </servlet>
+
+
   <servlet>
     <servlet-name>Register</servlet-name>
     <servlet-class>ir.mctab.project.services.customermanagement.Register</servlet-class>
   </servlet>
+
+  <servlet-mapping>
+  <servlet-name>GetRegistrationInformation</servlet-name>
+  <url-pattern>/getInfo</url-pattern>
+</servlet-mapping>
+
   <servlet-mapping>
     <servlet-name>Register</servlet-name>
     <url-pattern>/reg</url-pattern>

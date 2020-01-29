@@ -1,0 +1,17 @@
+*{
+    background-color: lightgray;
+
+}
+.image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto 50px;
+    display: block;
+}
+.headOfPage{
+    color: #394a52;
+    text-align: center;
+}
+.button{
+
+}

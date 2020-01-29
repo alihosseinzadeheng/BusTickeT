@@ -8,7 +8,7 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import static ir.mctab.project.config.HibernateUtil.getSession;
-
+import static ir.mctab.project.config.HibernateUtil.closeSession;
 public abstract class CrudRepository<Entity, ID extends Serializable> {
 
     protected abstract Class<Entity> getEntityClass();
@@ -17,6 +17,7 @@ public abstract class CrudRepository<Entity, ID extends Serializable> {
         getSession().getTransaction().begin();
         getSession().save(entity);
         getSession().getTransaction().commit();
+        closeSession();
         return entity;
     }
     public Entity update(Entity entity){
