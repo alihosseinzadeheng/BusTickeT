@@ -44,4 +44,12 @@ public class Customer {
     public void setTicketList(List<Ticket> ticketList) {
         this.ticketList = ticketList;
     }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
 }

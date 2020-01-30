@@ -10,9 +10,6 @@ import java.io.PrintWriter;
 
 public class GetRegistrationInformation extends HttpServlet {
 
-    public class register {
-    }
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -34,9 +31,8 @@ public class GetRegistrationInformation extends HttpServlet {
         session.setAttribute("fname",firstname);
         session.setAttribute("lname",lastname);
         session.setAttribute("gen",gender);
-        out.print("<br /> If you confirm, click on below: <br />");
+        out.print("<br/> If you confirm, click on below: <br/>");
         out.print("<a href='reg'>Save it Now</a>");
     }
-
 
 }

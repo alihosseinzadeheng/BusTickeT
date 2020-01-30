@@ -1,32 +1,69 @@
 <!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
   <listener>
-  <listener-class>MyListener</listener-class>
-</listener>
+    <listener-class>MyListener</listener-class>
+  </listener>
 
   <servlet>
     <servlet-name>GetRegistrationInformation</servlet-name>
     <servlet-class>ir.mctab.project.services.customermanagement.GetRegistrationInformation</servlet-class>
   </servlet>
 
-
   <servlet>
     <servlet-name>Register</servlet-name>
     <servlet-class>ir.mctab.project.services.customermanagement.Register</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>GetLoginInformation</servlet-name>
+    <servlet-class>ir.mctab.project.services.customermanagement.GetLoginInformation</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>ir.mctab.project.services.customermanagement.LoginByCustomer</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>GetSearchInformation</servlet-name>
+    <servlet-class>ir.mctab.project.services.tripmanagement.GetSearchInformation</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>ir.mctab.project.services.tripmanagement.SearchInTrips</servlet-class>
+  </servlet>
+
   <servlet-mapping>
-  <servlet-name>GetRegistrationInformation</servlet-name>
-  <url-pattern>/getInfo</url-pattern>
-</servlet-mapping>
+    <servlet-name>GetRegistrationInformation</servlet-name>
+    <url-pattern>/getRegInfo</url-pattern>
+  </servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>Register</servlet-name>
     <url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>GetLoginInformation</servlet-name>
+    <url-pattern>/getLoginInfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>GetSearchInformation</servlet-name>
+    <url-pattern>/getSearchInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/search</url-pattern>
   </servlet-mapping>
 </web-app>

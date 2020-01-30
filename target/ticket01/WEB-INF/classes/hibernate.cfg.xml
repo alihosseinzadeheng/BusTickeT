@@ -22,5 +22,6 @@
         <!-- Mapping -->
         <mapping class="ir.mctab.project.entities.Ticket"/>
         <mapping class="ir.mctab.project.entities.Customer"/>
+        <mapping class="ir.mctab.project.entities.TripList"/>
     </session-factory>
 </hibernate-configuration>
