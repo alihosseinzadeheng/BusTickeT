@@ -4,7 +4,7 @@
 <head>
     <title>جستجو</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="WEB-INF/resources/css/style.css">
     <link rel="stylesheet" href="bootstrap.min.css"/>
 </head>
 <body>
