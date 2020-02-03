@@ -67,7 +67,19 @@ public abstract class CrudRepository<Entity, ID extends Serializable> {
         getSession().getTransaction().commit();
         return query.list();
     }
+    public List<Entity> SearchFor(String searchFor,Long searchForThis){
+        getSession().beginTransaction();
 
+        Query<Entity> query =
+                getSession()
+                        .createQuery("from "
+                                +getEntityClass().getName()
+                                +" where "+searchFor+" =: searchForThis",getEntityClass());
+
+        query.setParameter("searchForThis",searchForThis);
+        getSession().getTransaction().commit();
+        return query.list();
+    }
 
     public List<Entity> SearchFor(String searchFor,String searchForThis, String searchFor2, String searchForThis2){
         getSession().beginTransaction();

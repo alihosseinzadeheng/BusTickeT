@@ -1,28 +1,36 @@
 
-.image {
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto 50px;
-    display: block;
-}
-.headOfPage{
-    text-align: center;
-}
-.container{
-    margin: auto;
+body {
+	font-family: serif;
+	font-size: 14px;
+	background-color:#fafe33;
+	color:#616161;
 }
 
+.image {
+	max-width: 30%;
+	height: 20%;
+	margin: 10px;
+	display: block;
+}
+.headOfPage{
+	text-align: center;
+}
+.container{
+	position: absolute;
+	text-align: center;
+	margin: 10%	;
+}
 .footer{
-alignment: bottom;
+	padding: 20px ;
 }
 .form-group{
-    display:block;
+	display:block;
 	width: 30%;
 	margin:30px;
 	float:right;
 }
 .form-group input{
-    display:block;
+	display:block;
 	margin-top:10px;
 	height:40px;
 	border-color:#FAB;
@@ -30,29 +38,31 @@ alignment: bottom;
 	padding:5%;
 }
 .form-group input:focus{
-    outline:none;
+	outline:none;
 }
 .form-group button{
-    display:block;
+	display:block;
 	width:80px;
 	background-color:#FAA;
 	margin:3px;
 	border:none;
 	font-size:20px;
 	border-radius:7px;
+	outline:none;
+	flex: auto;
 }
 .form-group button:hover{
-	background-color:dark-gray;
+	background-color:gray;
 }
 .select-container{
-    float:right;
+	float:right;
 	margin:5px;
 }
 
 .select{
- border-radius:15px;
- background-color:pink;
- position:relative;
+	border-radius:15px;
+	background-color:pink;
+	position:relative;
 }
 
 body header{
